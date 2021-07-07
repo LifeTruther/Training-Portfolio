@@ -1,1 +1,125 @@
-"I am simply commenting"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+  *{
+    box-sizing: border-box;
+  }
+
+  .content {
+    max-width: 900px;
+    margin: auto;
+    background: #ebebe0
+    padding: 10px;
+  }
+
+  body {
+    font-family: Helvetica;
+    background-color: #e7dfdf;
+  }
+
+  header img {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  nav {
+    float: right;
+    width: 25%;
+    max-width: 150px
+    height: auto;
+    background-color: #a2929b;
+    /* #c2d6d6 */
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding:inherit;
+  }
+
+
+  section::before {
+    float:left;
+    padding-left:10px;
+    padding-right:10px;
+    width: 75%;
+    max-width: 450px;
+  }
+
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  footer {
+    background-color: #5c8a8a;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  @media (max-width: 600px) {
+    nav, sections {
+      width: 100%;
+      height: auto;
+    }
+  }
+  </style>
+ <!--sections included are header, nav,article, and footer-->
+</head>
+
+<body>
+
+<header>
+
+<image src="sunset.jpg" alt="Header Image">
+
+</header>
+
+<div class="content">
+<nav>
+
+<image src="Ianchampion.png" alt="Drawing of Me" width="200px" height="140px" >
+
+<h3> My Appearance and My Links </h3>
+
+<ul>
+  <li> link to my linkedin </li>
+  <li> link to my Github </li>
+  <li> link to my favorite restaurant in Chicago</li>
+</ul>
+
+</nav>
+</div>
+
+<div class="content">
+<section::before>
+
+<h1>Hi, I'm Ian</h1>
+
+<p>I am a homeschooled recent medical school graduate who is beginning a career in data.
+    From my first computer game as a child, through building a computer and writing a few lines in Scheme,
+    I have always been interested in computers and computing. </p>
+
+<p>I am particularly interested in the development of a universal comprehensive medical record
+  method that can be shared across languages, platforms, and legal jurisdictions safely and smoothly.</p>
+
+<p>I am joyously married to a woman who knows programming better than I do. I love spending time
+  with her and our friends. I am a casual student of chess and LoL, I do read a lot, and I love
+  all kinds of things outside.</p>
+
+</section::before>
+</div>
+
+<footer>
+
+    <h2>hmmmm</h2>
+
+</footer>
+
+</body>
+</html>
